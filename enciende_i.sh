@@ -6,4 +6,4 @@ if [ $# -lt 2 ]; then
 fi
 
 i="$2"
-{ printf "$USER\n$PASS\n1\n$i\n2\nyes\n\n\e\e4"}|telnet $PDU
+{printf "$USER\n$PASS\n1\n$i\n2\nyes\n\n\e\e4"; sleep 2; }|telnet $PDU
