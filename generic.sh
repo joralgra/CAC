@@ -29,7 +29,7 @@ case $ACTION in
             { printf "$USER\n$PASS\n1\n$i\n1\nyes\n\n\e\e4"; sleep 2;}|telnet $PDU
         done
     else
-      echo "Falta el argumento requerido para la opción -n, -f o -t.$TO $FROM $NUM cdddfs"
+      echo "Falta el argumento requerido para la opción -n, -f o -t.$TO $FROM $NUM"
       exit 1
     fi
     ;;
